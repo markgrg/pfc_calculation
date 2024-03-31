@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Результаты подсчетов</title>
+    <link rel='stylesheet' type="text/css" href="static/home/css/result.css">
 </head>
-<body>
-    <q1><a href="login/">Авторизация</a></q1>
-    <q1><a href="">Главная страница</a></q1>
-    <q1><a href="about/">Про нас</a></q1>
+<body class="text">
+
+    <q1><a href="/">Главная страница</a></q1>
+    <q1><a href="/about/">Про нас</a></q1>
+
 <hr>
     <h1>Ваш результат:</h1>
-    {{ res }}
+    <q1>{{ res }} кКал*</q1>
+    <h1>Ваш Индекс Массы Тела:</h1>
+    <q1>{{ imt }} - {{ imt_res }}</q1>
 
 </body>
 </html>
