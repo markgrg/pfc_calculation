@@ -4,35 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel='stylesheet' type="text/css" href="static/home/css/index.css">
 </head>
-<body>
+    
+<body class="text">
     <h1>Главная страница</h1>
-    <q1><a href="login/">Авторизация</a></q1>
-    <q1><a href="{% url 'home' %}">Главная страница</a></q1>
+
     <q1><a href="about/">Про нас</a></q1>
-<hr>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>    
 <form action="{% url 'result' %}" method="get">Укажите возраст: 
 
-    <select name="age">
-        <option disabled selected>...</option>
-        <option value="18">18</option>
-        <option value="28">28</option>
-        <option value="37">37</option>
-        <option value="38">38</option>
-    </select>
-    <br>Укажите Ваш пол:
+    <input name="age">
+    <br>Укажите пол: 
     <select name="gender">
-        <option disabled selected>...</option>
+        <option selected>...</option>
         <option value="male">Мужчина</option>
         <option value="female">Женчина</option>
     </select>
     <br>Введите рост: 
     <input name="hight">
-    <br>
     <br>Введите вес: 
     <input name="weight">
     <br>
-    <button type="submit">Расчитать</button>
+    <button class="button-4" role="button" type="submit">Расчитать</button>
 </form>
 </body>
 </html>
